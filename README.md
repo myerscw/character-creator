@@ -7,7 +7,7 @@ In this workshop, you'll build a Sims-style character creation screen.
 
 Desktop:
 
-<img alt="Desktop-sized screenshot of the character creation screen" src="./docs/mockup.png" style="width: 100%;" />
+![Desktop-sized screenshot of the character creation screen](./docs/footer-fix.png)
 
 For this workshop, we're only targeting desktops (although if you're so inclined, creating a mobile variant would make a great stretch goal!).
 
@@ -67,7 +67,7 @@ Additionally, a few global styles can be found in `src/index.css`.
 
 Let's start with a small detail: The footer links are unreadable:
 
-<img alt="Side-by-side comparison of the current footer vs. the ideal one" src="./docs/footer-fix.png" style="max-width: 500px" />
+![Side-by-side comparison of the current footer vs. the ideal one](./docs/footer-fix.png)
 
 ### Exercise 2: Layout adjustments
 
@@ -77,29 +77,29 @@ We have a `MaxWidthWrapper` constraining the max width, but everything is super 
 
 Our header should be 65% of the available width, and our control-panel column should be 50%.
 
-<img alt="Annotated mockup showing the overall width at 1024px, the header occupying 65%, and the control panels occupying 50%" src="./docs/sizes.png" style="width: 100%;" />
+![Annotated mockup showing the overall width at 1024px, the header occupying 65%, and the control panels occupying 50%](./docs/sizes.png)
 
 The character (the big illustration) should use fixed positioning, and it should occupy the space cleared by the above width tweaks.
 
 Give the character a minimum height of 500px. On smaller windows, this means the character won't fit in the viewport:
 
-<img alt="Screenshot of a shorter Chrome window, with the character truncated at the knees" src="./docs/short-window.png" style="width: 100%;" />
+![Screenshot of a shorter Chrome window, with the character truncated at the knees](./docs/short-window.png)
 
 ### Exercise 3: Overflow
 
 Each control panel features a number of customizations. For control panels with too many options, a horizontal scrollbar should be introduced:
 
-<img alt="Close-up screen recording of the overflow area in the control-panel" src="./docs/overflow.gif" style="width: 100%;" />
+![Close-up screen recording of the overflow area in the control-panel](./docs/overflow.gif)
 
 ### Exercise 4: Perspective decoration
 
 To help add a bit of perspective, a light gray bar should extend across the bottom 40% of the screen:
 
-<img alt="Screenshot of the mockup, showing the light gray bar" src="./docs/mockup.png" style="width: 100%;" />
+![Screenshot of the mockup, showing the light gray bar](./docs/mockup.png)
 
 It should sit behind the avatar (and both the perspective bar and the character should sit below the footer):
 
-<img alt="Screen recording, showing how the character and stripe don't move as the page is scrolled" src="./docs/scroll.gif" style="width: 640px; max-width: 100%" />
+![Screen recording, showing how the character and stripe don't move as the page is scrolled](./docs/scroll.gif)
 
 You can use the background color `hsl(195deg, 20%, 86%)`.
 
@@ -109,7 +109,7 @@ For bonus points, solve this challenge without setting any z-indexes.
 
 On mobile devices, the cards should stack horizontally, and sit near the bottom of the screen, underneath the character:
 
-<img alt="Screen recording, showing a mobile variant of the application" src="./docs/mobile-variant.gif" style="max-width: 100%" />
+![Screen recording, showing a mobile variant of the application](./docs/mobile-variant.gif)
 
 **NOTE:** This is a challenging stretch goal! It may require some CSS features we haven't covered yet. This is meant as an extra challenge for advanced students. Feel free to skip it!
 
